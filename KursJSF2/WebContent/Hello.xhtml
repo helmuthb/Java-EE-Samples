@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+<h:form>
+Your name?
+<h:inputText id="name" value="#{greeting.name}" />
+<br/>
+Your age?
+<h:inputText id="age" value="#{greeting.age}" />
+<br/>
+<h:commandButton value="Submit">
+	<f:ajax execute="name age" render="welcometext" />
+</h:commandButton>
+<br/>
+<h:outputText id="welcometext" value="#{greeting.greeting}" />
+</h:form>
+</body> 
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facelet-taglib>
+  <namespace>http://polycollege.at/kurs-java3</namespace>
+  <tag>
+    <tag-name>hello</tag-name>
+    <source>helloworld/bitcoin.xhtml</source>
+  </tag>
+</facelet-taglib>
